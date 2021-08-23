@@ -170,6 +170,8 @@ class CountryCodePickerState extends State<CountryCodePicker> {
           child: Flex(
             direction: Axis.horizontal,
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               if (widget.showFlagMain != null
                   ? widget.showFlagMain!
@@ -211,10 +213,10 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                   child: Padding(
                       padding: widget.alignLeft
                           ? const EdgeInsets.only(right: 16.0, left: 8.0)
-                          : const EdgeInsets.only(right: 16.0),
+                          : EdgeInsets.zero,
                       child: Icon(
                         Icons.arrow_drop_down,
-                        color: Colors.grey,
+                        color: Colors.black,
                         size: widget.flagWidth,
                       )),
                 ),
